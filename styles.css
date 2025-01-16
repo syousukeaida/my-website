@@ -1,0 +1,40 @@
+.slider {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    flex-direction: row-reverse;
+}
+
+.slides img {
+    width: 50vw;
+    height: 100vh;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    height: 100%;
+    width: 50%;
+    border: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
